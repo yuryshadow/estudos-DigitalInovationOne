@@ -12,7 +12,7 @@
 /*elementos base*/
 body{
   background: var(--preta);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial', Times, serif;
   color: white;
 }
 
@@ -26,7 +26,7 @@ header .container{
 header .logo{
     margin-left: 5px;
     color:var(--vermelho);
-    font-family: 'Arial', Times;
+    font-family: 'Arial Black', Times;
     font-size: 40px;
 }
 
@@ -97,7 +97,12 @@ header nav a:hover{
 }
 
 .box-filme{
-    height: 100%;
-    width: 100%;
+    margin-top: 10px;
+    height: 50%;
+    width: 50%;
     display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
