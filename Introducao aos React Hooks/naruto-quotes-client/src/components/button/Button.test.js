@@ -1,10 +1,13 @@
-import { render, screen } from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import { Button } from './Button';
 
-test('renders button with text', () => {
-  render(<Button>Test</Button>);
+describe('teste de botao', () => {
+    test('renders button with text', () => {
+        render(<Button>Test</Button>)
+    
+        const buttonEl = screen.getByText('Test');
+    
+        expect(buttonEl).toBeInTheDocument();
+    });
 
-  const buttonEl = screen.getByText(/Test/i);
-
-  expect(buttonEl).toBeInTheDocument();
-});
+})
